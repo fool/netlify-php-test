@@ -7,12 +7,15 @@ var minutes = today.getMinutes();
 var seconds = today.getSeconds();
 
 if(dd<10) {
-    dd='0'+dd
+    dd='0'+dd;
 } 
 
 if(mm<10) {
-    mm='0'+mm
+    mm='0'+mm;
 } 
 
 today = mm+'/'+dd+'/'+yyyy+' '+hour+':'+minutes+':'+seconds;
+/* jshint ignore:start */
+// Code here will be ignored by JSHint.  Want a clean exit but do want to use this utility for the rest.
 document.write(today);
+/* jshint ignore:end */
